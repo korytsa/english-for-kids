@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="./img/logo.jpg">
+
+    <title>English for kids</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals (set A)</a>
+        <a href="animalsB.html">Animals (set B)</a>
+        <a href="actionA.html" class="active_button">Action (set A)</a>
+        <a href="actionB.html">Action (set B)</a>
+        <a href="actionC.html">Action (set C)</a>
+        <a href="adjective.html">Flat</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="emotion.html">Emotion</a>
+    </div>
+    
+    <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <button type="button" class="btn btn-primary">Play</button>
+    </div>
+
+    <div class="cards" id="cards"  onclick="closeNav()">
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio">
+                    <source src="./audio/cry.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/cry.jpg" alt="cry"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Cry</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/cry.jpg" alt="cry"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Крик</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio1">
+                    <source src="./audio/dance.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/dance.jpg" alt="dance"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Dance</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio1()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/dance.jpg" alt="dance"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Танцевать</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio2">
+                    <source src="./audio/dive.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/dive.jpg" alt="dive"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Dive</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio2()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/dive.jpg" alt="dive"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Нырять</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio3">
+                    <source src="./audio/draw.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/draw.jpg" alt="draw"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Draw</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio3()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/draw.jpg" alt="draw"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Рисовать</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio4">
+                    <source src="./audio/fish.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/fish.jpg" alt="fish"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Fish</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio4()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/fish.jpg" alt="fish"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Рыбалка</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio5">
+                    <source src="./audio/fly.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/fly.jpg" alt="fly"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Fly</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio5()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/fly.jpg" alt="fly"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Летать</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio6">
+                    <source src="./audio/hug.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/hug.jpg" alt="hug"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Hug</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio6()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/hug.jpg" alt="hug"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Объятие</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio7">
+                    <source src="./audio/jump.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/actionA/jump.jpg" alt="jump"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Jump</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio7()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/actionA/jump.jpg" alt="jump"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Прыжок</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        function playAudio() { 
+            document.getElementById("myAudio").play(); 
+        } 
+        function playAudio1() { 
+            document.getElementById("myAudio1").play(); 
+        } 
+        function playAudio2() { 
+            document.getElementById("myAudio2").play(); 
+        } 
+        function playAudio3() { 
+            document.getElementById("myAudio3").play(); 
+        } 
+        function playAudio4() { 
+            document.getElementById("myAudio4").play(); 
+        } 
+        function playAudio5() { 
+            document.getElementById("myAudio5").play(); 
+        } 
+        function playAudio6() { 
+            document.getElementById("myAudio6").play(); 
+        }
+        function playAudio7() { 
+            document.getElementById("myAudio7").play(); 
+        } 
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="./img/logo.jpg">
+
+    <title>English for kids</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals (set A)</a>
+        <a href="animalsB.html">Animals (set B)</a>
+        <a href="actionA.html">Action (set A)</a>
+        <a href="actionB.html">Action (set B)</a>
+        <a href="actionC.html">Action (set C)</a>
+        <a href="adjective.html" class="active_button">Flat</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="emotion.html">Emotion</a>
+    </div>
+    
+    <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <button type="button" class="btn btn-primary">Play</button>
+    </div>
+
+    <div class="cards" id="cards"  onclick="closeNav()">
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio">
+                    <source src="./audio/flat.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/living room.jpg" alt="living room"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Flat</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/living room.jpg" alt="living room"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Квартира</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio1">
+                    <source src="./audio/kitchen.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/kitchen.jpg" alt="kitchen"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Kitchen</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio1()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/kitchen.jpg" alt="kitchen"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Кухня</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio2">
+                    <source src="./audio/bedroom.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/bedroom.jpeg" alt="bedroom"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Bedroom</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio2()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/bedroom.jpeg" alt="bedroom"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Спальня</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio3">
+                    <source src="./audio/children.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/children.jpg" alt="children"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Nursery</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio3()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/children.jpg" alt="children"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Детская</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio4">
+                    <source src="./audio/holl.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/holl.jpg" alt="holl"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Hall</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio4()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/holl.jpg" alt="holl"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Коридор</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio5">
+                    <source src="./audio/balcony.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/qwe.jpg" alt="balcony"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Balcony</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio5()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/qwe.jpg" alt="balcony"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Балкон</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio6">
+                    <source src="./audio/bathroom.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/van.jpg" alt="bathroom"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Bathroom</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio6()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/van.jpg" alt="bathroom"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Ванная</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio7">
+                    <source src="./audio/house.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/adjective/house.jpg" alt="house"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">House</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio7()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/adjective/house.jpg" alt="house"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Дом</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        function playAudio() { 
+            document.getElementById("myAudio").play(); 
+        } 
+        function playAudio1() { 
+            document.getElementById("myAudio1").play(); 
+        } 
+        function playAudio2() { 
+            document.getElementById("myAudio2").play(); 
+        } 
+        function playAudio3() { 
+            document.getElementById("myAudio3").play(); 
+        } 
+        function playAudio4() { 
+            document.getElementById("myAudio4").play(); 
+        } 
+        function playAudio5() { 
+            document.getElementById("myAudio5").play(); 
+        } 
+        function playAudio6() { 
+            document.getElementById("myAudio6").play(); 
+        }
+        function playAudio7() { 
+            document.getElementById("myAudio7").play(); 
+        } 
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

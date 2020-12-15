@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="./img/logo.jpg">
+
+    <title>English for kids</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals (set A)</a>
+        <a href="animalsB.html">Animals (set B)</a>
+        <a href="actionA.html">Action (set A)</a>
+        <a href="actionB.html">Action (set B)</a>
+        <a href="actionC.html">Action (set C)</a>
+        <a href="adjective.html">Flat</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="emotion.html" class="active_button">Emotion</a>
+    </div>
+    
+    <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <button type="button" class="btn btn-primary">Play</button>
+    </div>
+
+    <div class="cards" id="cards"  onclick="closeNav()">
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio">
+                    <source src="./audio/angry.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/angry.jpg" alt="angry"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Angry</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/angry.jpg" alt="angry"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Сердитый</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio1">
+                    <source src="./audio/happy.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/happy.jpg" alt="happy"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Happy</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio1()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/happy.jpg" alt="happy"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Счастливый</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio2">
+                    <source src="./audio/laugh.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/laugh.jpg" alt="laugh"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Laugh</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio2()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/laugh.jpg" alt="laugh"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Смех</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio3">
+                    <source src="./audio/sad.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/sad.jpg" alt="sad"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Sad</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio3()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/sad.jpg" alt="sad"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Грустный</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio4">
+                    <source src="./audio/scared.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/scared.jpg" alt="scared"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Scared</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio4()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/scared.jpg" alt="scared"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Испуганный</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio5">
+                    <source src="./audio/smile.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/smile.jpg" alt="smile"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Smile</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio5()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/smile.jpg" alt="smile"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Улыбка</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio6">
+                    <source src="./audio/surprised.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/surprised.jpg" alt="surprised"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Surprised</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio6()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/surprised.jpg" alt="surprised"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Удивленный</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio7">
+                    <source src="./audio/tired.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/emotion/tired.jpg" alt="tired"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Tired</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio7()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/emotion/tired.jpg" alt="tired"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Уставший</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        function playAudio() { 
+            document.getElementById("myAudio").play(); 
+        } 
+        function playAudio1() { 
+            document.getElementById("myAudio1").play(); 
+        } 
+        function playAudio2() { 
+            document.getElementById("myAudio2").play(); 
+        } 
+        function playAudio3() { 
+            document.getElementById("myAudio3").play(); 
+        } 
+        function playAudio4() { 
+            document.getElementById("myAudio4").play(); 
+        } 
+        function playAudio5() { 
+            document.getElementById("myAudio5").play(); 
+        } 
+        function playAudio6() { 
+            document.getElementById("myAudio6").play(); 
+        }
+        function playAudio7() { 
+            document.getElementById("myAudio7").play(); 
+        } 
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

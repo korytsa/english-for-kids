@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="./img/logo.jpg">
+
+    <title>English for kids</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals (set A)</a>
+        <a href="animalsB.html" class="active_button">Animals (set B)</a>
+        <a href="actionA.html">Action (set A)</a>
+        <a href="actionB.html">Action (set B)</a>
+        <a href="actionC.html">Action (set C)</a>
+        <a href="adjective.html">Flat</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="emotion.html">Emotion</a>
+    </div>
+    
+    <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <button type="button" class="btn btn-primary">Play</button>
+    </div>
+
+    <div class="cards" id="cards"  onclick="closeNav()">
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio">
+                    <source src="./audio/bird.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/bird.jpg" alt="bird"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Bird</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/bird.jpg" alt="bird"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Птица</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio1">
+                    <source src="./audio/chick.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/chick.jpg" alt="chick"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Chick</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio1()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/chick.jpg" alt="chick"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Цыпленок</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio2">
+                    <source src="./audio/chicken.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/chicken.jpg" alt="chicken"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Chicken</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio2()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/chicken.jpg" alt="chicken"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Курица</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio3">
+                    <source src="./audio/fish.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/fish1.jpg" alt="fish1"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Fish</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio3()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/fish1.jpg" alt="fish1"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Рыба</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio4">
+                    <source src="./audio/frog.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/frog.jpg" alt="frog"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Frog</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio4()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/frog.jpg" alt="frog"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Лягушка</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio5">
+                    <source src="./audio/horse.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/horse.jpg" alt="horse"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Horse</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio5()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/horse.jpg" alt="horse"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Лошадь</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio6">
+                    <source src="./audio/mouse.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/mouse.jpg" alt="mouse"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Mouse</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio6()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/mouse.jpg" alt="mouse"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Мышь</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__single">
+            <div class="cards__front" >
+                <audio id="myAudio7">
+                    <source src="./audio/dog.mp3" type="audio/mp3">
+                </audio>
+                <img class="cards__image" src="./img/animalsB/dog.jpg" alt="dog"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Dog</h1>
+                    <span class="material-icons volume_up"  onclick="playAudio7()">volume_up</span>
+                </div>
+            </div>
+            <div class="cards__back">
+                <img class="cards__image" src="./img/animalsB/dog.jpg" alt="dog"/>
+                <div class="q">
+                    <h1 class="cards__artist" tabindex="0">Собака</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        function playAudio() { 
+            document.getElementById("myAudio").play(); 
+        } 
+        function playAudio1() { 
+            document.getElementById("myAudio1").play(); 
+        } 
+        function playAudio2() { 
+            document.getElementById("myAudio2").play(); 
+        } 
+        function playAudio3() { 
+            document.getElementById("myAudio3").play(); 
+        } 
+        function playAudio4() { 
+            document.getElementById("myAudio4").play(); 
+        } 
+        function playAudio5() { 
+            document.getElementById("myAudio5").play(); 
+        } 
+        function playAudio6() { 
+            document.getElementById("myAudio6").play(); 
+        }
+        function playAudio7() { 
+            document.getElementById("myAudio7").play(); 
+        } 
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

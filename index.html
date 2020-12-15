@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="./img/logo.jpg">
+    <title>English for kids</title>
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="active_button">Home</a>
+        <a href="animals.html">Animals (set A)</a>
+        <a href="animalsB.html">Animals (set B)</a>
+        <a href="actionA.html">Action (set A)</a>
+        <a href="actionB.html">Action (set B)</a>
+        <a href="actionC.html">Action (set C)</a>
+        <a href="adjective.html">Flat</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="emotion.html">Emotion</a>
+    </div>
+    
+    <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <button type="button" class="btn btn-primary">Play</button>
+
+    </div>
+
+    <div class="cards" id="cards" onclick="closeNav()">
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/animals/cat.jpg" alt="cat">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="animals.html">Animals (set A)</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/animalsB/bird.jpg" alt="bird">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="animalsB.html">Animals (set B)</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/actionA/dive.jpg" alt="dive">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="actionA.html">Action (set A)</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/actionB/skip.jpg" alt="skip">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="actionB.html">Action (set B)</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/actionC/snowboard.jpg" alt="snowboard">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="actionC.html">Action (set C)</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/adjective/living room.jpg" alt="flat">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="adjective.html">Flat</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/clothes/coat.jpg" alt="coat">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="clothes.html">Clothes</a></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards__singl" style="max-width: 20rem;">
+                <img class="cards__image" src="./img/emotion/laugh.jpg" alt="laugh">
+                <div class="q">
+                    <h1 class="cards__artist"><a href="emotion.html">Emotion</a></h1>
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

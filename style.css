@@ -1,0 +1,133 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url(./img/bcg.jpg);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(61, 60, 60);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(238, 238, 238);
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    text-decoration: none;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.active_button {
+    background-color:rgb(120, 194, 173); 
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    perspective: 1000px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.5% 2% 0% 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards__single {
+    background: rgb(120, 194, 173);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    width: 300px;
+    height: 265px;
+}
+.cards__singl{
+    background: rgb(120, 194, 173);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    width: 300px;
+    height: 265px;
+}
+.cards__single:hover{
+    box-shadow: 0px 8px 16px 0px rgb(71, 71, 71);
+    transition: 0.3s;
+}
+.cards__image {
+    border-radius: 16px;
+    width: 300px;
+    height: 200px;
+}
+.cards__single.flip {
+    transform: rotateY(180deg); 
+}
+.cards__front img {
+    width: 300px;
+    height: 200px;
+}
+.cards__back img {
+    width: 300px;
+    height: 200px;
+}
+.cards__front, .cards__back {
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.cards__front {
+    height: 100%;
+    transform: rotateX(0deg);
+    
+}
+.cards__back {
+    height: 100%;
+    margin-top: -90%;
+    transform: rotateY(180deg);
+}
+.q{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 0% 4% 0% 4%;
+}
+.q span{
+    margin-top: 5%;
+    cursor: pointer;
+}
+.q h1 a{
+    text-decoration: none;
+    color: #5a5a5a; 
+    font-size: 80%;
+}
+.cards__artist{
+    outline: none;
+}
